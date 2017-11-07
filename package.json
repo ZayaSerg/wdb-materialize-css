@@ -1,0 +1,15 @@
+{
+  "name": "webdeveloperblog_materialize-css",
+  "version": "1.0.0",
+  "description": "lessons",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"https://github.com/ZayaSerg/wdb-materialize-css.git\""
+  },
+  "author": "",
+  "license": "ISC"
+}
