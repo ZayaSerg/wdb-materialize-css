@@ -34,7 +34,7 @@
       		<ul class="right hide-on-med-and-down">
       			<li><a href="#">Home</a></li>
       			<li><a href="#">About us</a></li>
-      			<li><a href="#">Support</a></li>
+      			<li><a href="#modal1" class="modal-trigger">Support</a></li>
       			<li><a href="#">Product</a></li>
       			<!-- Dropdown Trigger -->
       			<li>
@@ -64,7 +64,6 @@
     <a class="carousel-item" href="#three!"><img src="https://picsum.photos/1000/300/?136"></a>
     <a class="carousel-item" href="#four!"><img src="https://picsum.photos/1000/300/?369"></a>
     <a class="carousel-item" href="#five!"><img src="https://picsum.photos/1000/300/?188"></a>
-
     </div>
   </div>
 
@@ -73,7 +72,6 @@
       <div class="col s1">x</div>
       <div class="col s1 offset-s10">x</div>
     </div>
-
     <div class="row">
       <div class="col xl3 l4 m6 s12 center-align">
         <img src="https://seeklogo.com/images/M/materialize-logo-0FCAD8A6F8-seeklogo.com.png" height="100" width="200" alt="">
@@ -96,7 +94,6 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel, nostrum pariatur rem numquam sed quasi facere! Repellendus facilis vero quas, consequuntur laudantium autem perferendis.</p>
       </div>
     </div>
-
   </div>
 
   <div class="parallax-container">
@@ -114,7 +111,21 @@
   </div>
   <div class="parallax-container">
     <div class="parallax">
-      <img src="https://picsum.photos/1000/400/?random">
+      <img src="https://picsum.photos/1000/4f00/?random">
+    </div>
+  </div>
+
+  <!-- Modal Trigger -->
+  <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veniam odit unde, quam, explicabo enim eius aut nobis maiores velit itaque iure adipisci! Culpa officiis, eveniet eius. Error mollitia atque nemo tempora dicta, obcaecati corrupti aliquid vel odit labore consequatur?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Agree</a>
     </div>
   </div>
 
@@ -126,6 +137,12 @@
     $(document).ready(function() {
       $(".button-collapse").sideNav();
       $(".parallax").parallax();
+      $(".modal").modal({
+        dismissible:false,
+        opacity:0.5,
+        inDuration:500,
+        outDuration:1000
+      });
       $(".carousel.carousel-slider").carousel({
         fullWidth:true,
         indicators:true,
