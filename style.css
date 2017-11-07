@@ -5,3 +5,7 @@ body {
 nav {
   background: #803c42;
 }
+
+.parallax-container {
+  height: 300px;
+}

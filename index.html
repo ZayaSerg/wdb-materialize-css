@@ -99,6 +99,25 @@
 
   </div>
 
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="https://picsum.photos/1000/400/?random">
+    </div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h1 class="header">Parallax</h1>
+      <p class="grey-text text-darken-3 lighten-3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="https://picsum.photos/1000/400/?random">
+    </div>
+  </div>
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <!-- Compiled and minified JavaScript -->
@@ -106,6 +125,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $(".button-collapse").sideNav();
+      $(".parallax").parallax();
       $(".carousel.carousel-slider").carousel({
         fullWidth:true,
         indicators:true,
