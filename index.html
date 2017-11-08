@@ -239,6 +239,33 @@
     </div>
   </div>
 
+  <div class="container">
+   <a href="#!" class="btn-large waves-effect waves-purple">Click</a>
+  </div>
+
+  <div class="container">
+   <a href="#!" class="btn-large waves-effect waves-mycolor" onclick="Materialize.fadeInImage('#fade-img')">Click</a>
+   <img src="https://picsum.photos/800/600/?random" alt="" id="fade-img" style="opacity: 0;">
+  </div>
+
+  <div class="container">
+   <a href="#!" class="btn-large waves-effect waves-mycolor" onclick="Materialize.showStaggeredList('#ul-test')">Click</a>
+   <ul id="ul-test">
+     <li style="opacity: 0;">
+       <h2>Hello World!</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur.</p>
+     </li>
+     <li style="opacity: 0;">Test2</li>
+     <li style="opacity: 0;">Test3</li>
+     <li style="opacity: 0;">Test4</li>
+   </ul>
+   <a href="#!" class="btn btn-floating pulse">
+     <i class="material-icons">menu</i>
+   </a>
+  </div>
+
+  <br>
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <!-- Compiled and minified JavaScript -->
@@ -258,7 +285,8 @@
         indicators:true,
         duration: 500
         // noWrap:true
-      })
+      });
+      // Materialize.fadeInImage('#fade-img');
     })
   </script>
 

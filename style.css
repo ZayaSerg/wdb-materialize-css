@@ -1,6 +1,6 @@
-body {
+/*body {
   height: 1000px;
-}
+}*/
 
 nav {
   background: #803c42;
@@ -8,4 +8,8 @@ nav {
 
 .parallax-container {
   height: 300px;
+}
+
+.waves-effect.waves-mycolor .waves-ripple {
+  background-color: #e90636;
 }
